@@ -1,0 +1,11 @@
+@import "../../../assets/scss/variables.scss";
+
+.bg-image {
+  background-image: url("../../../assets/images/login-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 47vw;
+}
+.login-heading {
+  color: $primary-color;
+}
