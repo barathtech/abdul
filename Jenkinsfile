@@ -7,5 +7,12 @@ pipeline {
                 sh'''npm start index.js'''
             }
         }
+      def isPullRequest = false
+if ( params.pullRequestID?.trim() )
+{
+  isPullRequest = true
+  //do stuff to change how the pipeline should react.
+}
+    
       }
     }
