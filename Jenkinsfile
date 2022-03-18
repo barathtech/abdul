@@ -1,10 +1,10 @@
 pipeline {
-    agent any
+    agent 
+     docker { image 'node:16-alphine' }
     stages {
         stage('build') {
             steps { 
-                sh'''npm install'''
-                sh'''npm start index.js'''
+                sh'''node --versiom'''
             }
          }
       }
